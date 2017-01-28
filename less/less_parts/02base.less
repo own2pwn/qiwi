@@ -1,0 +1,21 @@
+.main_container{
+	&.fullwidth_container{
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+}
+
+.animate-wrap{
+	position: relative;
+}
+
+.os-animation{
+	transform:translate3d(0,40px,0);
+	transition: transform 0.6s cubic-bezier(0.39, 0.58, 0.57, 1), opacity 0.6s linear;
+	opacity: 0;
+}
+ 
+.os-animation.moveUp{
+    transform:none;
+    opacity: 1;
+}
