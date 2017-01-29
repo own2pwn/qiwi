@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title></title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/lightslider.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+ 
+
+</head>
+<body>
+
+
+
+  <!-- START sticky top menu -->
+  <div class="top_menu">
+    <!-- START projects button + projects categories hidden menu -->
+    <div class="top_menu_projects_mobile">
+      <img src="img/menu-proj-mobile.png">
+    </div>
+    <div class="top_menu_mobile">
+      <img class="avatar" src="img/mobile-avatar.png">
+      <img class="search" src="img/search-ic-mobile.svg">
+      <div class="mobile_search_input_block">
+      <input class="mobile_search_input" type="text" name="">
+      </div>
+    </div>
+    <div class="top_menu_projects">
+      <img src="img/menu-proj.jpg" width="18px">
+      <span>Проекты</span>
+    </div>
+    <div class="top_menu_categories">
+      <div class="top_menu_categories_row">
+        <div class="top_menu_categories_element" style="background-image: url('./img/menu-cat-1-orange.svg');">
+          <span>Музыка</span>
+        </div>
+        <div class="top_menu_categories_element" style="background-image: url('./img/menu-cat-2-orange.svg');">
+          <span>Экология</span>
+        </div>
+      </div>
+      <div class="top_menu_categories_row">
+        <div class="top_menu_categories_element" style="background-image: url('./img/menu-cat-3-orange.svg');">
+          <span>Гаджеты</span>
+        </div>
+        <div class="top_menu_categories_element" style="background-image: url('./img/menu-cat-4-orange.svg');">
+          <span>Игры</span>
+        </div>
+      </div>
+      <div class="top_menu_categories_row">
+        <div class="top_menu_categories_element" style="background-image: url('./img/menu-cat-5-orange.svg');">
+          <span>Кино</span>
+        </div>
+        <div class="top_menu_categories_element" style="background-image: url('./img/menu-cat-6-orange.svg');">
+          <span>Еда</span>
+        </div>
+      </div>
+      <div class="top_menu_categories_row">
+        <div class="top_menu_categories_element" style="background-image: url('./img/menu-cat-7-orange.svg');">
+          <span>Изделия</span>
+        </div>
+        <div class="top_menu_categories_element" style="background-image: url('./img/menu-cat-8-orange.svg');">
+          <span>Дизайн</span>
+        </div>
+      </div>
+      <div class="top_menu_categories_row">
+        <div class="top_menu_categories_element" style="background-image: url('./img/menu-cat-9-orange.svg');">
+          <span>Обучение</span>
+        </div>
+        <div class="top_menu_categories_element" style="background-image: url('./img/menu-cat-10-orange.svg');">
+          <span>Все</span>
+        </div>
+      </div>
+    </div>
+    <!-- END projects button and menu -->
+    <!-- START logo + menu buttons + search -->
+    <div class="top_menu_logo_mobile">
+      <img src="img/mobile-logo.svg">
+    </div>
+    <div class="top_menu_logo">
+      <img src="img/logo-qiwi.svg">
+    </div>
+    <div class="top_menu_start_project">
+      Создать проект
+    </div>
+    <div class="top_menu_search">
+      <input type="text" name="search" id="search">
+      <div class="autofill">
+        <div class="autofill_item"><a class="autofill_link" href="#">Первые в своем роде умные часы</a></div>
+        <div class="autofill_item"><a class="autofill_link" href="#">Экологический светильник</a></div>
+        <div class="autofill_item"><a class="autofill_link" href="#">Набор часов от Mixberry</a></div>
+        <div class="autofill_item"><a class="autofill_link" href="#">Современный взгляд на вековые традиции</a></div>
+        <div class="autofill_item"><a class="autofill_link" href="#">Читаю по руке</a></div>
+      </div>
+      <img src="img/search-ic.svg">
+    </div>
+    <div class="top_menu_item can_hide">
+      <span>Wiki</span>
+    </div>
+    <div class="top_menu_item">
+      <span>Инвесторам</span>
+    </div>
+    <div class="top_menu_item">
+      <span>Авторам</span>
+    </div>
+    <div class="top_menu_item can_hide">
+      <span>О платформе</span>
+    </div>
+    <!-- END logo + buttons + search -->
+  </div>
+  <!-- END sticky top menu -->
+  
+  <!-- User Panel -->
+  <div class="user-panel">
+    <div class="left-panel-wrap">
+      <img src="img/avatar.png" alt="" class="avatar">
+      <ul class="user-menu">
+        <li><a href="#">Проекты <span class="menu-badge">3</span></a></li>
+        <li><a href="#">Инвестиции <span class="menu-badge">2</span></a></li>
+        <li><a href="#">Избранное <span class="menu-badge">5</span></a></li>
+      </ul>
+    </div>
+    <div class="right-panel-wrap">
+      <a href="#" class="user-panel-link"><img src="img/profile-icon.svg" alt="">Профиль</a>
+      <a href="#" class="user-panel-link"><img src="img/logout-icon.svg" alt="">Выход</a>
+    </div>
+  </div>
+  <!-- END User Panel -->
+
+  <!-- Project Heading -->
+  <div class="project-heading">
+    <ul class="project-breadcrumbs">
+      <li><a href="#"><img src="img/move-back.svg" alt=""> к списку проектов</a></li>
+      <li><a href="#"><img src="img/move-forward.svg" alt=""> на страницу проекта</a></li>
+    </ul>
+    <div class="project-title-wrap">
+      <h1 class="project-title">Первые в своем роде умные часы</h1>
+      <div class="project-title-meta">
+        <a href="#" class="edit-project">РЕДАКТИРОВАТЬ ПРОЕКТ</a>
+        <a href="#" class="delete-project"><img src="img/delete.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="project-progress-wrap">
+      <div class="progress-meta">
+        <span>Идет сбор средств</span>
+        <span>670 000 Р/78%</span>
+      </div>
+      <div class="progress-line">
+        <span class="current-progress" style="width:78%"></span>
+      </div>
+      <div class="progress-meta"><span>21 день до конца</span></div>
+    </div>
+    
+  </div>
+
+  <!-- News Content -->
+  <div class="smaller-container">
+
+    <ul class="project-links">
+      <li><a href="#">CТАТИСТИКА</a></li>
+      <li><a href="#">НОВОСТИ</a></li>
+      <li><a href="#">ИНВЕСТОРЫ</a></li>
+      <li><a href="#">КОММЕНТАРИИ</a></li>
+    </ul>
+    <div class="row">
+      <div class="col-md-12">
+        <h4 class="active">Редактирование новостей</h4>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="news-item add-news">
+          <img src="img/plus.svg" alt="">
+          <a href="#" class="blue-btn">Добавить новость</a>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="news-item">
+          <img src="img/moto-360-womens.jpg" alt="">
+          <div class="news-base-mask">
+            <h4>Оставайтесь на связи</h4>
+            <div class="news-edit">
+              <span class="edit-dots">
+                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="22">
+                  <g fill="#FFF" fill-rule="evenodd" transform="rotate(-90 11 11)">
+                    <ellipse cx="2" cy="2" rx="2" ry="2"/>
+                    <path d="M11 4c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z"/>
+                    <ellipse cx="20" cy="2" rx="2" ry="2"/>
+                  </g>
+                </svg>
+                <span class="close-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <g fill="#FFF" fill-rule="evenodd">
+                      <path d="M1.697.58L8.57 7.455H6.875L13.747.58l1.697 1.698L8.57 9.15l-.848.85-.848-.85L0 2.28"/>
+                      <path d="M1.697 16L8.57 9.126H6.875L13.747 16l1.697-1.697L8.57 7.43l-.848-.85-.848.85L0 14.302"/>
+                    </g>
+                  </svg>
+                </span>
+              </span>
+              <ul>
+                <li><a href="#">Редактировать</a></li>
+                <li><a href="#">Удалить</a></li>
+                <li><a href="#">Посмотреть комментарии</a></li>
+              </ul>
+            </div>
+            <div class="comments">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28">
+                  <g fill="none" fill-rule="evenodd">
+                    <path fill="#FFF" d="M1.173 27.102s4.2-2.845 4.256-2.826c1.21.41 2.52.627 3.84.627 3.95 0 7.31-1.88 8.62-4.508C9.74 22.038 3.9 16.447 2.9 13 1.11 14.265 0 16.05 0 18.027c.058 1.575.828 3.125 2.176 4.337.062.056-1.003 4.738-1.003 4.738z"/>
+                    <path stroke="#FFF" stroke-width="1.8" d="M16.442 1C10.076 1 4.918 4.892 4.918 9.66c0 .55.065 1.07.195 1.59.066.323.196.615.294.94 1.47 3.502 5.844 6.096 11.035 6.096.62 0 1.273-.032 1.893-.13.36-.032.686-.097 1.045-.16.624-.125 1.248-.287 1.857-.487l.234-.08 4.68 2.22-1.08-4.25s.205-.18.304-.274c1.646-1.54 2.6-3.483 2.6-5.476 0-4.767-5.19-8.66-11.523-8.66z"/>
+                  </g>
+                </svg>
+                 87                
+              </a>
+
+            </div>
+            <div class="news-date">13 мая 2016</div>
+          </div>
+          <div class="news-hover-mask">
+            <p>Качество каждой, стиль, уникальность каждой вещи и приятные цены обязательно порадуют даже самых взыскательных модниц. вещи порадуют даже самых взыскательных модниц. Обязательно порадуют даже самых взыскательных модниц</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="news-item">
+          <img src="img/moto-360-womens.jpg" alt="">
+          <div class="news-base-mask">
+            <h4>Красивое платье бренда Pasta</h4>
+            <div class="news-edit">
+              <span class="edit-dots">
+                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="22">
+                  <g fill="#FFF" fill-rule="evenodd" transform="rotate(-90 11 11)">
+                    <ellipse cx="2" cy="2" rx="2" ry="2"/>
+                    <path d="M11 4c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z"/>
+                    <ellipse cx="20" cy="2" rx="2" ry="2"/>
+                  </g>
+                </svg>
+                <span class="close-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <g fill="#FFF" fill-rule="evenodd">
+                      <path d="M1.697.58L8.57 7.455H6.875L13.747.58l1.697 1.698L8.57 9.15l-.848.85-.848-.85L0 2.28"/>
+                      <path d="M1.697 16L8.57 9.126H6.875L13.747 16l1.697-1.697L8.57 7.43l-.848-.85-.848.85L0 14.302"/>
+                    </g>
+                  </svg>
+                </span>
+              </span>
+              <ul>
+                <li><a href="#">Редактировать</a></li>
+                <li><a href="#">Удалить</a></li>
+                <li><a href="#">Посмотреть комментарии</a></li>
+              </ul>
+            </div>
+            <div class="comments">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28">
+                  <g fill="none" fill-rule="evenodd">
+                    <path fill="#FFF" d="M1.173 27.102s4.2-2.845 4.256-2.826c1.21.41 2.52.627 3.84.627 3.95 0 7.31-1.88 8.62-4.508C9.74 22.038 3.9 16.447 2.9 13 1.11 14.265 0 16.05 0 18.027c.058 1.575.828 3.125 2.176 4.337.062.056-1.003 4.738-1.003 4.738z"/>
+                    <path stroke="#FFF" stroke-width="1.8" d="M16.442 1C10.076 1 4.918 4.892 4.918 9.66c0 .55.065 1.07.195 1.59.066.323.196.615.294.94 1.47 3.502 5.844 6.096 11.035 6.096.62 0 1.273-.032 1.893-.13.36-.032.686-.097 1.045-.16.624-.125 1.248-.287 1.857-.487l.234-.08 4.68 2.22-1.08-4.25s.205-.18.304-.274c1.646-1.54 2.6-3.483 2.6-5.476 0-4.767-5.19-8.66-11.523-8.66z"/>
+                  </g>
+                </svg>
+                 87                
+              </a>
+
+            </div>
+            <div class="news-date">13 мая 2016</div>
+          </div>
+          <div class="news-hover-mask">
+            <p>Качество каждой, стиль, уникальность каждой вещи и приятные цены обязательно порадуют даже самых взыскательных модниц. вещи порадуют даже самых взыскательных модниц. Обязательно порадуют даже самых взыскательных модниц</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-4">
+        <div class="news-item">
+          <img src="img/moto-360-womens.jpg" alt="">
+          <div class="news-base-mask">
+            <h4>Красивое платье бренда Pasta</h4>
+            <div class="news-edit">
+              <span class="edit-dots">
+                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="22">
+                  <g fill="#FFF" fill-rule="evenodd" transform="rotate(-90 11 11)">
+                    <ellipse cx="2" cy="2" rx="2" ry="2"/>
+                    <path d="M11 4c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z"/>
+                    <ellipse cx="20" cy="2" rx="2" ry="2"/>
+                  </g>
+                </svg>
+                <span class="close-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <g fill="#FFF" fill-rule="evenodd">
+                      <path d="M1.697.58L8.57 7.455H6.875L13.747.58l1.697 1.698L8.57 9.15l-.848.85-.848-.85L0 2.28"/>
+                      <path d="M1.697 16L8.57 9.126H6.875L13.747 16l1.697-1.697L8.57 7.43l-.848-.85-.848.85L0 14.302"/>
+                    </g>
+                  </svg>
+                </span>
+              </span>
+              <ul>
+                <li><a href="#">Редактировать</a></li>
+                <li><a href="#">Удалить</a></li>
+                <li><a href="#">Посмотреть комментарии</a></li>
+              </ul>
+            </div>
+            <div class="comments">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28">
+                  <g fill="none" fill-rule="evenodd">
+                    <path fill="#FFF" d="M1.173 27.102s4.2-2.845 4.256-2.826c1.21.41 2.52.627 3.84.627 3.95 0 7.31-1.88 8.62-4.508C9.74 22.038 3.9 16.447 2.9 13 1.11 14.265 0 16.05 0 18.027c.058 1.575.828 3.125 2.176 4.337.062.056-1.003 4.738-1.003 4.738z"/>
+                    <path stroke="#FFF" stroke-width="1.8" d="M16.442 1C10.076 1 4.918 4.892 4.918 9.66c0 .55.065 1.07.195 1.59.066.323.196.615.294.94 1.47 3.502 5.844 6.096 11.035 6.096.62 0 1.273-.032 1.893-.13.36-.032.686-.097 1.045-.16.624-.125 1.248-.287 1.857-.487l.234-.08 4.68 2.22-1.08-4.25s.205-.18.304-.274c1.646-1.54 2.6-3.483 2.6-5.476 0-4.767-5.19-8.66-11.523-8.66z"/>
+                  </g>
+                </svg>
+                 87                
+              </a>
+
+            </div>
+            <div class="news-date">13 мая 2016</div>
+          </div>
+          <div class="news-hover-mask">
+            <p>Качество каждой, стиль, уникальность каждой вещи и приятные цены обязательно порадуют даже самых взыскательных модниц. вещи порадуют даже самых взыскательных модниц. Обязательно порадуют даже самых взыскательных модниц</p>
+          </div>
+        </div>
+      </div>    
+      <div class="col-md-4 col-sm-4">
+        <div class="news-item">
+          <img src="img/moto-360-womens.jpg" alt="">
+          <div class="news-base-mask">
+            <h4>Красивое платье бренда Pasta</h4>
+            <div class="news-edit">
+              <span class="edit-dots">
+                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="22">
+                  <g fill="#FFF" fill-rule="evenodd" transform="rotate(-90 11 11)">
+                    <ellipse cx="2" cy="2" rx="2" ry="2"/>
+                    <path d="M11 4c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z"/>
+                    <ellipse cx="20" cy="2" rx="2" ry="2"/>
+                  </g>
+                </svg>
+                <span class="close-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <g fill="#FFF" fill-rule="evenodd">
+                      <path d="M1.697.58L8.57 7.455H6.875L13.747.58l1.697 1.698L8.57 9.15l-.848.85-.848-.85L0 2.28"/>
+                      <path d="M1.697 16L8.57 9.126H6.875L13.747 16l1.697-1.697L8.57 7.43l-.848-.85-.848.85L0 14.302"/>
+                    </g>
+                  </svg>
+                </span>
+              </span>
+              <ul>
+                <li><a href="#">Редактировать</a></li>
+                <li><a href="#">Удалить</a></li>
+                <li><a href="#">Посмотреть комментарии</a></li>
+              </ul>
+            </div>
+            <div class="comments">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28">
+                  <g fill="none" fill-rule="evenodd">
+                    <path fill="#FFF" d="M1.173 27.102s4.2-2.845 4.256-2.826c1.21.41 2.52.627 3.84.627 3.95 0 7.31-1.88 8.62-4.508C9.74 22.038 3.9 16.447 2.9 13 1.11 14.265 0 16.05 0 18.027c.058 1.575.828 3.125 2.176 4.337.062.056-1.003 4.738-1.003 4.738z"/>
+                    <path stroke="#FFF" stroke-width="1.8" d="M16.442 1C10.076 1 4.918 4.892 4.918 9.66c0 .55.065 1.07.195 1.59.066.323.196.615.294.94 1.47 3.502 5.844 6.096 11.035 6.096.62 0 1.273-.032 1.893-.13.36-.032.686-.097 1.045-.16.624-.125 1.248-.287 1.857-.487l.234-.08 4.68 2.22-1.08-4.25s.205-.18.304-.274c1.646-1.54 2.6-3.483 2.6-5.476 0-4.767-5.19-8.66-11.523-8.66z"/>
+                  </g>
+                </svg>
+                 87                
+              </a>
+
+            </div>
+            <div class="news-date">13 мая 2016</div>
+          </div>
+          <div class="news-hover-mask">
+            <p>Качество каждой, стиль, уникальность каждой вещи и приятные цены обязательно порадуют даже самых взыскательных модниц. вещи порадуют даже самых взыскательных модниц. Обязательно порадуют даже самых взыскательных модниц</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="news-item">
+          <img src="img/moto-360-womens.jpg" alt="">
+          <div class="news-base-mask">
+            <h4>Красивое платье бренда Pasta</h4>
+            <div class="news-edit">
+              <span class="edit-dots">
+                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="22">
+                  <g fill="#FFF" fill-rule="evenodd" transform="rotate(-90 11 11)">
+                    <ellipse cx="2" cy="2" rx="2" ry="2"/>
+                    <path d="M11 4c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z"/>
+                    <ellipse cx="20" cy="2" rx="2" ry="2"/>
+                  </g>
+                </svg>
+                <span class="close-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <g fill="#FFF" fill-rule="evenodd">
+                      <path d="M1.697.58L8.57 7.455H6.875L13.747.58l1.697 1.698L8.57 9.15l-.848.85-.848-.85L0 2.28"/>
+                      <path d="M1.697 16L8.57 9.126H6.875L13.747 16l1.697-1.697L8.57 7.43l-.848-.85-.848.85L0 14.302"/>
+                    </g>
+                  </svg>
+                </span>
+              </span>
+              <ul>
+                <li><a href="#">Редактировать</a></li>
+                <li><a href="#">Удалить</a></li>
+                <li><a href="#">Посмотреть комментарии</a></li>
+              </ul>
+            </div>
+            <div class="comments">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28">
+                  <g fill="none" fill-rule="evenodd">
+                    <path fill="#FFF" d="M1.173 27.102s4.2-2.845 4.256-2.826c1.21.41 2.52.627 3.84.627 3.95 0 7.31-1.88 8.62-4.508C9.74 22.038 3.9 16.447 2.9 13 1.11 14.265 0 16.05 0 18.027c.058 1.575.828 3.125 2.176 4.337.062.056-1.003 4.738-1.003 4.738z"/>
+                    <path stroke="#FFF" stroke-width="1.8" d="M16.442 1C10.076 1 4.918 4.892 4.918 9.66c0 .55.065 1.07.195 1.59.066.323.196.615.294.94 1.47 3.502 5.844 6.096 11.035 6.096.62 0 1.273-.032 1.893-.13.36-.032.686-.097 1.045-.16.624-.125 1.248-.287 1.857-.487l.234-.08 4.68 2.22-1.08-4.25s.205-.18.304-.274c1.646-1.54 2.6-3.483 2.6-5.476 0-4.767-5.19-8.66-11.523-8.66z"/>
+                  </g>
+                </svg>
+                 87                
+              </a>
+
+            </div>
+            <div class="news-date">13 мая 2016</div>
+          </div>
+          <div class="news-hover-mask">
+            <p>Качество каждой, стиль, уникальность каждой вещи и приятные цены обязательно порадуют даже самых взыскательных модниц. вещи порадуют даже самых взыскательных модниц. Обязательно порадуют даже самых взыскательных модниц</p>
+          </div>
+        </div>
+      </div>
+    </div> 
+    <div class="row">
+      <div class="col-md-4 col-sm-4">
+        <div class="news-item">
+          <img src="img/moto-360-womens.jpg" alt="">
+          <div class="news-base-mask">
+            <h4>Новая коллекция</h4>
+            <div class="news-edit">
+              <span class="edit-dots">
+                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="22">
+                  <g fill="#FFF" fill-rule="evenodd" transform="rotate(-90 11 11)">
+                    <ellipse cx="2" cy="2" rx="2" ry="2"/>
+                    <path d="M11 4c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z"/>
+                    <ellipse cx="20" cy="2" rx="2" ry="2"/>
+                  </g>
+                </svg>
+                <span class="close-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <g fill="#FFF" fill-rule="evenodd">
+                      <path d="M1.697.58L8.57 7.455H6.875L13.747.58l1.697 1.698L8.57 9.15l-.848.85-.848-.85L0 2.28"/>
+                      <path d="M1.697 16L8.57 9.126H6.875L13.747 16l1.697-1.697L8.57 7.43l-.848-.85-.848.85L0 14.302"/>
+                    </g>
+                  </svg>
+                </span>
+              </span>
+              <ul>
+                <li><a href="#">Редактировать</a></li>
+                <li><a href="#">Удалить</a></li>
+                <li><a href="#">Посмотреть комментарии</a></li>
+              </ul>
+            </div>
+            <div class="comments">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28">
+                  <g fill="none" fill-rule="evenodd">
+                    <path fill="#FFF" d="M1.173 27.102s4.2-2.845 4.256-2.826c1.21.41 2.52.627 3.84.627 3.95 0 7.31-1.88 8.62-4.508C9.74 22.038 3.9 16.447 2.9 13 1.11 14.265 0 16.05 0 18.027c.058 1.575.828 3.125 2.176 4.337.062.056-1.003 4.738-1.003 4.738z"/>
+                    <path stroke="#FFF" stroke-width="1.8" d="M16.442 1C10.076 1 4.918 4.892 4.918 9.66c0 .55.065 1.07.195 1.59.066.323.196.615.294.94 1.47 3.502 5.844 6.096 11.035 6.096.62 0 1.273-.032 1.893-.13.36-.032.686-.097 1.045-.16.624-.125 1.248-.287 1.857-.487l.234-.08 4.68 2.22-1.08-4.25s.205-.18.304-.274c1.646-1.54 2.6-3.483 2.6-5.476 0-4.767-5.19-8.66-11.523-8.66z"/>
+                  </g>
+                </svg>
+                 87                
+              </a>
+
+            </div>
+            <div class="news-date">13 мая 2016</div>
+          </div>
+          <div class="news-hover-mask">
+            <p>Качество каждой, стиль, уникальность каждой вещи и приятные цены обязательно порадуют даже самых взыскательных модниц. вещи порадуют даже самых взыскательных модниц. Обязательно порадуют даже самых взыскательных модниц</p>
+          </div>
+        </div>
+      </div>    
+      <div class="col-md-4 col-sm-4">
+        <div class="news-item">
+          <img src="img/moto-360-womens.jpg" alt="">
+          <div class="news-base-mask">
+            <h4>Коллекция Business style perfect</h4>
+            <div class="news-edit">
+              <span class="edit-dots">
+                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="22">
+                  <g fill="#FFF" fill-rule="evenodd" transform="rotate(-90 11 11)">
+                    <ellipse cx="2" cy="2" rx="2" ry="2"/>
+                    <path d="M11 4c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z"/>
+                    <ellipse cx="20" cy="2" rx="2" ry="2"/>
+                  </g>
+                </svg>
+                <span class="close-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <g fill="#FFF" fill-rule="evenodd">
+                      <path d="M1.697.58L8.57 7.455H6.875L13.747.58l1.697 1.698L8.57 9.15l-.848.85-.848-.85L0 2.28"/>
+                      <path d="M1.697 16L8.57 9.126H6.875L13.747 16l1.697-1.697L8.57 7.43l-.848-.85-.848.85L0 14.302"/>
+                    </g>
+                  </svg>
+                </span>
+              </span>
+              <ul>
+                <li><a href="#">Редактировать</a></li>
+                <li><a href="#">Удалить</a></li>
+                <li><a href="#">Посмотреть комментарии</a></li>
+              </ul>
+            </div>
+            <div class="comments">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28">
+                  <g fill="none" fill-rule="evenodd">
+                    <path fill="#FFF" d="M1.173 27.102s4.2-2.845 4.256-2.826c1.21.41 2.52.627 3.84.627 3.95 0 7.31-1.88 8.62-4.508C9.74 22.038 3.9 16.447 2.9 13 1.11 14.265 0 16.05 0 18.027c.058 1.575.828 3.125 2.176 4.337.062.056-1.003 4.738-1.003 4.738z"/>
+                    <path stroke="#FFF" stroke-width="1.8" d="M16.442 1C10.076 1 4.918 4.892 4.918 9.66c0 .55.065 1.07.195 1.59.066.323.196.615.294.94 1.47 3.502 5.844 6.096 11.035 6.096.62 0 1.273-.032 1.893-.13.36-.032.686-.097 1.045-.16.624-.125 1.248-.287 1.857-.487l.234-.08 4.68 2.22-1.08-4.25s.205-.18.304-.274c1.646-1.54 2.6-3.483 2.6-5.476 0-4.767-5.19-8.66-11.523-8.66z"/>
+                  </g>
+                </svg>
+                 87                
+              </a>
+
+            </div>
+            <div class="news-date">13 мая 2016</div>
+          </div>
+          <div class="news-hover-mask">
+            <p>Качество каждой, стиль, уникальность каждой вещи и приятные цены обязательно порадуют даже самых взыскательных модниц. вещи порадуют даже самых взыскательных модниц. Обязательно порадуют даже самых взыскательных модниц</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4">
+        <div class="news-item">
+          <img src="img/moto-360-womens.jpg" alt="">
+          <div class="news-base-mask">
+            <h4>Оставайтесь на связи</h4>
+            <div class="news-edit">
+              <span class="edit-dots">
+                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="22">
+                  <g fill="#FFF" fill-rule="evenodd" transform="rotate(-90 11 11)">
+                    <ellipse cx="2" cy="2" rx="2" ry="2"/>
+                    <path d="M11 4c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z"/>
+                    <ellipse cx="20" cy="2" rx="2" ry="2"/>
+                  </g>
+                </svg>
+                <span class="close-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                    <g fill="#FFF" fill-rule="evenodd">
+                      <path d="M1.697.58L8.57 7.455H6.875L13.747.58l1.697 1.698L8.57 9.15l-.848.85-.848-.85L0 2.28"/>
+                      <path d="M1.697 16L8.57 9.126H6.875L13.747 16l1.697-1.697L8.57 7.43l-.848-.85-.848.85L0 14.302"/>
+                    </g>
+                  </svg>
+                </span>
+              </span>
+              <ul>
+                <li><a href="#">Редактировать</a></li>
+                <li><a href="#">Удалить</a></li>
+                <li><a href="#">Посмотреть комментарии</a></li>
+              </ul>
+            </div>
+            <div class="comments">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28">
+                  <g fill="none" fill-rule="evenodd">
+                    <path fill="#FFF" d="M1.173 27.102s4.2-2.845 4.256-2.826c1.21.41 2.52.627 3.84.627 3.95 0 7.31-1.88 8.62-4.508C9.74 22.038 3.9 16.447 2.9 13 1.11 14.265 0 16.05 0 18.027c.058 1.575.828 3.125 2.176 4.337.062.056-1.003 4.738-1.003 4.738z"/>
+                    <path stroke="#FFF" stroke-width="1.8" d="M16.442 1C10.076 1 4.918 4.892 4.918 9.66c0 .55.065 1.07.195 1.59.066.323.196.615.294.94 1.47 3.502 5.844 6.096 11.035 6.096.62 0 1.273-.032 1.893-.13.36-.032.686-.097 1.045-.16.624-.125 1.248-.287 1.857-.487l.234-.08 4.68 2.22-1.08-4.25s.205-.18.304-.274c1.646-1.54 2.6-3.483 2.6-5.476 0-4.767-5.19-8.66-11.523-8.66z"/>
+                  </g>
+                </svg>
+                 87                
+              </a>
+
+            </div>
+            <div class="news-date">13 мая 2016</div>
+          </div>
+          <div class="news-hover-mask">
+            <p>Качество каждой, стиль, уникальность каждой вещи и приятные цены обязательно порадуют даже самых взыскательных модниц. вещи порадуют даже самых взыскательных модниц. Обязательно порадуют даже самых взыскательных модниц</p>
+          </div>
+        </div>
+      </div>
+    </div>        
+  </div>
+
+    <!-- START footer -->
+  <div class="footer">
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="card_mobile_footer">
+          <img class="menu_button" src="img/menu-proj.jpg">
+          <img class="logo" src="img/blue-logo.svg">
+        </div>
+      </div>
+
+      <div class="row card_mobile_hide_footer">
+        <div class="col-sm-3 col-xs-6 footer_block first">
+          <div class="footer_title">О ПЛАТФОРМЕ</div>
+          <a href="#">WIKI</a>
+          <a href="#">Авторам</a>
+          <a href="#">Инвесторам</a>
+          <a href="#">Правила использования</a>
+          <a href="#">Запустить проект</a>
+        </div>
+        <div class="col-sm-3 col-xs-6 footer_block second">
+          <div class="footer_title">КАТЕГОРИИ</div>
+          <a href="#">Экология</a>
+          <a href="#">Гаджеты</a>
+          <a href="#">Изделия и хэндмейд</a>
+          <a href="#">Игры</a>
+          <a href="#">Музыка</a>
+          <a href="#">Кино и видео</a>
+        </div>
+        <div class="col-sm-3 col-xs-6 footer_block third">
+          <div class="footer_title">&nbsp;</div>
+          <a href="#">Еда</a>
+          <a href="#">Технологии</a>
+          <a href="#">Книги</a>
+          <a href="#">Игры</a>
+          <a href="#">Косметика</a>
+          <a href="#">Мебель</a>
+        </div>
+        <div class="col-sm-3 col-xs-6 footer_block social">
+          <div class="footer_title">СОЦИАЛЬНЫЕ СЕТИ</div>
+          <div class="footer_social_icon facebook" style="background-image: url('img/facebook-icon-blue.svg');"></div>
+          <div class="footer_social_icon twitter" style="background-image: url('img/twitter-icon-blue.svg');"></div>
+          <div class="footer_social_icon instagram" style="background-image: url('img/instagram-icon-blue.svg');"></div>
+          <div class="footer_social_icon gplus" style="background-image: url('img/gplus-icon-blue.svg');"></div>
+        </div>
+      </div>
+
+      <div class="row footer_copyright_block">
+        <div class="col-md-9 col-sm-8 footer_copyright">© 2016 QIWI Crowdfunding. Все права защищены.</div>
+        <div class="col-md-3 col-sm-4 footer_created_in">
+          Созданно в <a href="#">AIR PRODUCTION</a>
+          <div class="footer_social_mobile">
+            <div class="footer_social_icon facebook" style="background-image: url('img/facebook-icon-blue.svg');"></div>
+            <div class="footer_social_icon twitter" style="background-image: url('img/twitter-icon-blue.svg');"></div>
+            <div class="footer_social_icon instagram" style="background-image: url('img/instagram-icon-blue.svg');"></div>
+            <div class="footer_social_icon gplus" style="background-image: url('img/gplus-icon-blue.svg');"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- END footer -->
+<script src="js/jquery.smooth-scroll.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/script.js" type="text/javascript"></script>
+<script src="js/lightslider.min.js" type="text/javascript"></script>
+<script src="js/smoothscroll.js" type="text/javascript"></script>
+
+</body>
+</html>

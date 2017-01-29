@@ -13,6 +13,11 @@ jQuery(document).ready(function($) {
     event.preventDefault();
   });
 
+  $( ".smooth-link" ).smoothScroll();
+  $(".edit-dots").click(function() {
+    $(this).parent().find('ul').slideToggle();
+    $(this).toggleClass('edit-opened');
+  });
 
   var tog_src_arrow = [
     "img/user-collapse-down.svg",  // down image

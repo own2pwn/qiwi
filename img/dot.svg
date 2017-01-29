@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="4" height="22">
+  <g fill="#FFF" fill-rule="evenodd" transform="rotate(-90 11 11)">
+    <ellipse cx="2" cy="2" rx="2" ry="2"/>
+    <path d="M11 4c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z"/>
+    <ellipse cx="20" cy="2" rx="2" ry="2"/>
+  </g>
+</svg>

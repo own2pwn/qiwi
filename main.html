@@ -108,6 +108,12 @@
       <span>Проекты</span>
     </div>
     <div class="top_menu_categories">
+      <ul class="mobile-menu">
+        <li><a href="#" class="blue-btn">Создать проект</a></li>
+        <li><a href="#">Как работает</a></li>
+        <li><a href="#">Авторам</a></li>
+        <li><a href="#">Инвесторам</a></li>
+      </ul>
       <div class="top_menu_categories_row">
         <div class="top_menu_categories_element" style="background-image: url('./img/menu-cat-1-orange.svg');">
           <span>Музыка</span>
@@ -174,10 +180,10 @@
     <div class="top_menu_item can_hide">
       <span>Wiki</span>
     </div>
-    <div class="top_menu_item">
+    <div class="top_menu_item can_hide">
       <span>Инвесторам</span>
     </div>
-    <div class="top_menu_item">
+    <div class="top_menu_item can_hide">
       <span>Авторам</span>
     </div>
     <div class="top_menu_item can_hide">
@@ -408,9 +414,9 @@
         <!-- mobile -->
         <div class="categories_mobile_grid">
           <div class="item">
-            <div class="top_menu_categories_element categories_carousel_item" style="background-image: url('./img/menu-cat-1-orange.svg');">
+            <a href="#music_project" class="top_menu_categories_element categories_carousel_item" style="background-image: url('./img/menu-cat-1-orange.svg');">
               <span>Музыка</span>
-            </div>
+            </a>
           </div>
           <div class="item">
             <div class="top_menu_categories_element categories_carousel_item" style="background-image: url('./img/menu-cat-2-orange.svg');">
@@ -435,54 +441,54 @@
         <div class="categories_carousel">
           <ul id="category_slider">
             <li>
-              <div class="top_menu_categories_element categories_carousel_item" style="background-image: url('./img/menu-cat-1-orange.svg');">
+              <a href="#music_project" class="top_menu_categories_element categories_carousel_item smooth-link" style="background-image: url('./img/menu-cat-1-orange.svg');">
                 <span>Музыка</span>
-              </div>
+              </a>
             </li>
             <li>
-              <div class="top_menu_categories_element categories_carousel_item" style="background-image: url('./img/menu-cat-2-orange.svg');">
+              <a href="#ecology_project" class="top_menu_categories_element categories_carousel_item smooth-link" style="background-image: url('./img/menu-cat-2-orange.svg');">
                 <span>Экология</span>
-              </div>
+              </a>
             </li>
             <li>
-              <div class="top_menu_categories_element categories_carousel_item" style="background-image: url('./img/menu-cat-3-orange.svg');">
+              <a href="#" class="top_menu_categories_element categories_carousel_item smooth-link" style="background-image: url('./img/menu-cat-3-orange.svg');">
                 <span>Гаджеты</span>
-              </div>
+              </a>
             </li>
             <li>
-              <div class="top_menu_categories_element categories_carousel_item" style="background-image: url('./img/menu-cat-4-orange.svg');">
+              <a href="#" class="top_menu_categories_element categories_carousel_item smooth-link" style="background-image: url('./img/menu-cat-4-orange.svg');">
                 <span>Игры</span>
-              </div>
+              </a>
             </li>
             <li>
-              <div class="top_menu_categories_element categories_carousel_item" style="background-image: url('./img/menu-cat-5-orange.svg');">
+              <a href="#" class="top_menu_categories_element categories_carousel_item smooth-link" style="background-image: url('./img/menu-cat-5-orange.svg');">
                 <span>Кино</span>
-              </div>
+              </a>
             </li>
             <li>
-              <div class="top_menu_categories_element categories_carousel_item" style="background-image: url('./img/menu-cat-6-orange.svg');">
+              <a href="#" class="top_menu_categories_element categories_carousel_item smooth-link" style="background-image: url('./img/menu-cat-6-orange.svg');">
                 <span>Еда</span>
-              </div>
+              </a>
             </li>
             <li>
-              <div class="top_menu_categories_element categories_carousel_item" style="background-image: url('./img/menu-cat-7-orange.svg');">
+              <a href="#" class="top_menu_categories_element categories_carousel_item smooth-link" style="background-image: url('./img/menu-cat-7-orange.svg');">
                 <span>Изделия</span>
-              </div>
+              </a>
             </li>
             <li>
-              <div class="top_menu_categories_element categories_carousel_item" style="background-image: url('./img/menu-cat-8-orange.svg');">
+              <a href="#" class="top_menu_categories_element categories_carousel_item smooth-link" style="background-image: url('./img/menu-cat-8-orange.svg');">
                 <span>Дизайн</span>
-              </div>
+              </a>
             </li>
             <li>
-              <div class="top_menu_categories_element categories_carousel_item" style="background-image: url('./img/menu-cat-9-orange.svg');">
+              <a href="#" class="top_menu_categories_element categories_carousel_item smooth-link" style="background-image: url('./img/menu-cat-9-orange.svg');">
                 <span>Обучение</span>
-              </div>
+              </a>
             </li>
             <li>
-              <div class="top_menu_categories_element categories_carousel_item" style="background-image: url('./img/menu-cat-10-orange.svg');">
+              <a href="#" class="top_menu_categories_element categories_carousel_item smooth-link" style="background-image: url('./img/menu-cat-10-orange.svg');">
                 <span>Все</span>
-              </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -551,7 +557,7 @@
     <!-- END projects slider MOBILE -->
 
     <!-- START project card with video -->
-    <div class="container-fluid project_card_video_left card_1">
+    <div class="container-fluid project_card_video_left card_1" id="music_project">
       <div class="row">
         <div class="project_card_background" style="background: url('img/project-card-video.png') 50% 50% no-repeat; background-size: cover; position: relative;">
           <div class="project_card_video_play"><i class="fa fa-caret-right"></i></div>
@@ -645,7 +651,7 @@
     <!-- END projects slider MOBILE -->
 
     <!-- START project card - left side description -->
-    <div class="container-fluid project_card card_2">
+    <div class="container-fluid project_card card_2" id="ecology_project">
       <div class="row">
         <div class="project_card_block second_to_animate">
           <div class="animate-wrap">
@@ -1021,9 +1027,10 @@
   </div>
   <!-- END footer -->
         
-
+<script src="js/jquery.smooth-scroll.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
 <script src="js/script.js" type="text/javascript"></script>
 <script src="js/lightslider.min.js" type="text/javascript"></script>
-<script src="js/jquery.waypoints.min.js"></script>
+
 </body>
 </html>
