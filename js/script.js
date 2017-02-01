@@ -1274,6 +1274,95 @@ jQuery(document).ready(function($) {
     });
 
  });
+$('.cancel-btn').on( "click", function() {
+  $.magnificPopup.close();
+});
+  // Add News Popup
+  $('.add-news .blue-btn').magnificPopup({
+    removalDelay: 500,
+    midClick: true,
+    callbacks: {
+      beforeOpen: function() {
+         this.st.mainClass = this.st.el.attr('data-effect');
+      }
+    }
+  });
+
+  // Add News Popup
+  $('.news-hover-mask').magnificPopup({
+    type: 'ajax',
+    removalDelay: 500,
+    midClick: true,
+    callbacks: {
+      beforeOpen: function() {
+         this.st.mainClass = this.st.el.attr('data-effect');
+
+      },
+      parseAjax: function(mfpResponse) {
+      mfpResponse.data = $(mfpResponse.data).find('.full-news');
+    },
+    ajaxContentAdded: function() {
+      var card_news_slider_small = $('#card_news_slider_small').lightSlider({
+        loop:false,
+        pager:false,
+        slideMargin: 20,
+        controls: false,
+        item:3,
+        slideMove: 2,
+        enableDrag: false,
+        easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+      });  
+      $('.project_card_news_block.small .carousel_button.prev').on('click', function () {
+          card_news_slider_small.goToPrevSlide();
+      });
+      $('.project_card_news_block.small .carousel_button.next').on('click', function () {
+          card_news_slider_small.goToNextSlide();
+      });
+
+
+      $(".project_card_news_block .item .news_card").hover(function() {
+        $(this).find(".hover_part").stop().animate({"height": "100%"}, 200);
+        $(this).find(".text").stop().fadeIn(400);
+        $(this).find(".img").css('background-image', 'url(img/news-msgs-blue.svg)');
+        $(this).find(".main_part").css('color', '#0023a0');
+      }, function() {
+        $(this).find(".hover_part").stop().animate({"height": "0"}, 200);
+        $(this).find(".text").stop().fadeOut(200);
+        $(this).find(".img").css('background-image', '');
+        $(this).find(".main_part").css('color', '');
+      });
+
+     }
+    }
+  });
+
+
+// REFERENCES:
+// https://developer.mozilla.org/en-US/docs/Rich-Text_Editing_in_Mozilla
+// https://developer.mozilla.org/en-US/docs/Web/API/document.execCommand
+
+// SETUP
+var box = $('#editor');
+box.attr('contentEditable', true);
+
+// STYLE
+var edit = function(role) {
+  var val = false;
+  switch (role) {
+    case 'formatBlock': val = 'blockquote'; break;
+    case 'createLink': val = prompt('Введите ссылку'); break;
+    case 'insertImage': val = prompt('Введите путь к изображению:'); break;
+    case 'insertHTML': val = prompt('Введите код видео:'); break;
+  }
+  document.execCommand(role, false, val);
+  box.focus();
+}
+
+// EDITING LISTENERS
+$('#editControls .btn').on('click', function() {
+  edit($(this).data('role'));
+});
+
 
 
 });
