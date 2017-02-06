@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title></title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/lightslider.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+ 
+
+</head>
+<body class="white_bg">
+
+
+
+  <!-- START sticky top menu -->
+  <div class="top_menu">
+    <!-- START projects button + projects categories hidden menu -->
+    <div class="top_menu_projects_mobile">
+      <img src="img/menu-proj-mobile.png">
+    </div>
+    <div class="top_menu_mobile">
+      <img class="avatar" src="img/mobile-avatar.png">
+      <img class="search" src="img/search-ic-mobile.svg">
+      <div class="mobile_search_input_block">
+      <input class="mobile_search_input" type="text" name="">
+      </div>
+    </div>
+    <div class="top_menu_projects">
+      <img src="img/menu-proj.jpg" width="18px">
+      <span>Проекты</span>
+    </div>
+    <div class="top_menu_categories">
+      <div class="top_menu_categories_row">
+        <div class="top_menu_categories_element" style="background-image: url('./img/menu-cat-1-orange.svg');">
+          <span>Музыка</span>
+        </div>
+        <div class="top_menu_categories_element" style="background-image: url('./img/menu-cat-2-orange.svg');">
+          <span>Экология</span>
+        </div>
+      </div>
+      <div class="top_menu_categories_row">
+        <div class="top_menu_categories_element" style="background-image: url('./img/menu-cat-3-orange.svg');">
+          <span>Гаджеты</span>
+        </div>
+        <div class="top_menu_categories_element" style="background-image: url('./img/menu-cat-4-orange.svg');">
+          <span>Игры</span>
+        </div>
+      </div>
+      <div class="top_menu_categories_row">
+        <div class="top_menu_categories_element" style="background-image: url('./img/menu-cat-5-orange.svg');">
+          <span>Кино</span>
+        </div>
+        <div class="top_menu_categories_element" style="background-image: url('./img/menu-cat-6-orange.svg');">
+          <span>Еда</span>
+        </div>
+      </div>
+      <div class="top_menu_categories_row">
+        <div class="top_menu_categories_element" style="background-image: url('./img/menu-cat-7-orange.svg');">
+          <span>Изделия</span>
+        </div>
+        <div class="top_menu_categories_element" style="background-image: url('./img/menu-cat-8-orange.svg');">
+          <span>Дизайн</span>
+        </div>
+      </div>
+      <div class="top_menu_categories_row">
+        <div class="top_menu_categories_element" style="background-image: url('./img/menu-cat-9-orange.svg');">
+          <span>Обучение</span>
+        </div>
+        <div class="top_menu_categories_element" style="background-image: url('./img/menu-cat-10-orange.svg');">
+          <span>Все</span>
+        </div>
+      </div>
+    </div>
+    <!-- END projects button and menu -->
+    <!-- START logo + menu buttons + search -->
+    <div class="top_menu_logo_mobile">
+      <img src="img/mobile-logo.svg">
+    </div>
+    <div class="top_menu_logo">
+      <img src="img/logo-qiwi.svg">
+    </div>
+    <div class="top_menu_start_project">
+      Создать проект
+    </div>
+    <div class="top_menu_search">
+      <input type="text" name="search" id="search">
+      <div class="autofill">
+        <div class="autofill_item"><a class="autofill_link" href="#">Первые в своем роде умные часы</a></div>
+        <div class="autofill_item"><a class="autofill_link" href="#">Экологический светильник</a></div>
+        <div class="autofill_item"><a class="autofill_link" href="#">Набор часов от Mixberry</a></div>
+        <div class="autofill_item"><a class="autofill_link" href="#">Современный взгляд на вековые традиции</a></div>
+        <div class="autofill_item"><a class="autofill_link" href="#">Читаю по руке</a></div>
+      </div>
+      <img src="img/search-ic.svg">
+    </div>
+    <div class="top_menu_item can_hide">
+      <span>Wiki</span>
+    </div>
+    <div class="top_menu_item">
+      <span>Инвесторам</span>
+    </div>
+    <div class="top_menu_item">
+      <span>Авторам</span>
+    </div>
+    <div class="top_menu_item can_hide">
+      <span>О платформе</span>
+    </div>
+    <!-- END logo + buttons + search -->
+  </div>
+  <!-- END sticky top menu -->
+  
+  <!-- User Panel -->
+  <div class="user-panel">
+    <div class="left-panel-wrap">
+      <img src="img/avatar.png" alt="" class="avatar">
+      <ul class="user-menu">
+        <li><a href="#">Проекты <span class="menu-badge">3</span></a></li>
+        <li><a href="#">Инвестиции <span class="menu-badge">2</span></a></li>
+        <li><a href="#">Избранное <span class="menu-badge">5</span></a></li>
+      </ul>
+    </div>
+    <div class="right-panel-wrap">
+      <a href="#" class="user-panel-link"><img src="img/profile-icon.svg" alt="">Профиль</a>
+      <a href="#" class="user-panel-link"><img src="img/logout-icon.svg" alt="">Выход</a>
+    </div>
+  </div>
+  <!-- END User Panel -->
+
+  <!-- Project Heading -->
+  <div class="project-heading">
+    <ul class="project-breadcrumbs">
+      <li><a href="#"><img src="img/move-back.svg" alt=""> к списку проектов</a></li>
+      <li><a href="#"><img src="img/move-forward.svg" alt=""> на страницу проекта</a></li>
+    </ul>
+    <div class="project-title-wrap">
+      <h1 class="project-title">Первые в своем роде умные часы</h1>
+      <div class="project-title-meta">
+        <a href="#" class="edit-project">РЕДАКТИРОВАТЬ ПРОЕКТ</a>
+        <a href="#" class="delete-project"><img src="img/delete.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="project-progress-wrap">
+      <div class="progress-meta">
+        <span>Идет сбор средств</span>
+        <span>670 000 Р/78%</span>
+      </div>
+      <div class="progress-line">
+        <span class="current-progress" style="width:78%"></span>
+      </div>
+      <div class="progress-meta"><span>21 день до конца</span></div>
+    </div>
+    
+  </div>
+
+  <!-- News Content -->
+  <div class="smaller-container">
+    <ul class="project-links">
+      <li><a href="#">CТАТИСТИКА</a></li>
+      <li><a href="#">НОВОСТИ</a></li>
+      <li><a href="#">ИНВЕСТОРЫ</a></li>
+      <li><a href="#">КОММЕНТАРИИ</a></li>
+    </ul>
+  </div>
+
+    <!-- START project - budget -->
+  <div class="container-fluid statistics">
+    <div class="row">
+      <div class="col-md-4 counters">
+            <div class="timer-wrap">
+              <h4 class="active">Собрано</h4>
+              <span class="timer big" data-to="240150" data-speed="200">0</span><span class="big-suffix">Р</span>
+            </div>
+            <ul class="smaller-timer">
+              <li>
+                <span class="timer-preffix"><img src="img/arrow-up.svg" alt=""></span><span class="timer small" data-to="35150" data-speed="400">0</span><span class="small-suffix">Р</span>
+                <p>Сегодня </p>
+              </li>
+              <li>
+                <span class="timer small" data-to="21150" data-speed="200">0</span><span class="small-suffix">Р</span>
+                <p>Вчера</p>
+              </li>
+              <li>
+                <span class="timer small" data-to="133" data-speed="200">0</span>
+                <p>Инвестора</p>
+              </li>
+            </ul>
+      </div>
+      <div class="col-md-3">
+        <div class="chart" data-percent="73">73%</div>
+      </div>
+      <div class="col-md-5 slider-wrap">
+        <ul id="reccomendation">
+          <li>
+              <h3>Советы по привлечению инвесторов</h3>
+              <p>Тем не менее, он оленья кожа есть счет Qiwi, так что я интересно, если я каким-то образом мог его удивить тем, что его имя включено в раздел спасибо.</p>
+          </li>
+          <li>
+              <h3>Советы по привлечению инвесторов</h3>
+              <p>Тем не менее, он оленья кожа есть счет Qiwi, так что я интересно, если я каким-то образом мог его удивить тем, что его имя включено в раздел спасибо.</p>
+          </li>
+          <li>
+              <h3>Советы по привлечению инвесторов</h3>
+              <p>Тем не менее, он оленья кожа есть счет Qiwi, так что я интересно, если я каким-то образом мог его удивить тем, что его имя включено в раздел спасибо.</p>
+          </li>
+          <li>
+              <h3>Советы по привлечению инвесторов</h3>
+              <p>Тем не менее, он оленья кожа есть счет Qiwi, так что я интересно, если я каким-то образом мог его удивить тем, что его имя включено в раздел спасибо.</p>
+          </li>                    
+        </ul>
+      </div>
+    </div>
+
+    <div class="title-wrap">
+      <h4 class="active">Покупки по дням</h4>
+      <div class="search_filters_group">
+        <div class="group_item" id="month">
+          <div class="menu">
+            <div class="filter_name">МАРТ 2016</div>
+            <div class="menu_list">
+              <div class="filter item">Март 2016</div>
+              <div class="filter item">Апрель 2016</div>
+              <div class="filter item">Август 2016</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <canvas id="projectLineChart" width="1400" height="530"></canvas>
+    <h4 class="active">Вознаграждения</h4>
+    <div class="horizontal-diagram">
+      <div class="item">
+        <div class="item-progress"><span style="width:50%"></span></div>
+        <div class="qty-items">589 <span class="diagram-title">КОЛИЧЕСТВО ПОКУПОК</span></div>
+        <div class="amount-items">65 450 <span class="diagram-title">СУММА ПОКУПОК, <em>РУБ</em></span></div>
+        <div class="item-info">Постер - афиша КАЛИНОВ МОСТ «Тридесятое царство», юбилейный тур, с автографами музыкантов + цифровая версия нового альбома.</div>
+      </div>
+      <div class="item">
+        <div class="item-progress"><span style="width:80%"></span></div>
+        <div class="qty-items">952</div>
+        <div class="amount-items">98 960</div>
+        <div class="item-info">Книга «Калинов мост. История» с автографом Дмитрия Ревякина + цифровая версия нового альбома «Сезон овец».</div>
+      </div>
+      <div class="item">
+        <div class="item-progress"><span style="width:40%"></span></div>
+        <div class="qty-items">189</div>
+        <div class="amount-items">31 820</div>
+        <div class="item-info">Новый альбом «Сезон овец» на CD с автографами музыкантов группы "Калинов мост"</div> 
+      </div>
+      <div class="item">
+        <div class="item-progress"><span style="width:100%"></span></div>
+        <div class="qty-items">1972</div>
+        <div class="amount-items">158 250</div>
+        <div class="item-info">Книга «Гнев совы» с автографом Дмитрия Ревякина + альбом «Сезон овец» на CD.</div>        
+      </div>
+      <div class="item">
+        <div class="item-progress"><span style="width:60%"></span></div>
+        <div class="qty-items">384</div>
+        <div class="amount-items">45 790</div>
+        <div class="item-info">Футболка «КАЛИНОВ МОСТ - 30.Тридесятое царство» + цифровая версия нового альбома.</div>        
+      </div>
+      <div class="item">
+        <div class="item-progress"><span style="width:25%"></span></div>
+        <div class="qty-items">98</div>
+        <div class="amount-items">20 100</div>
+        <div class="item-info">Постер - афиша КАЛИНОВ МОСТ «Тридесятое царство», юбилейный тур, с автографами музыкантов + цифровая версия нового альбома.</div>        
+      </div>
+      <div class="item">
+        <div class="item-progress"><span style="width:50%"></span></div>
+        <div class="qty-items">223</div>
+        <div class="amount-items">39 450</div>
+        <div class="item-info">Новый альбом «Сезон овец» на CD с автографами музыкантов группы "Калинов мост"</div>        
+      </div>
+    </div>
+  </div>
+  <!-- END project - budget -->
+
+    <!-- START footer -->
+  <div class="footer">
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="card_mobile_footer">
+          <img class="menu_button" src="img/menu-proj.jpg">
+          <img class="logo" src="img/blue-logo.svg">
+        </div>
+      </div>
+
+      <div class="row card_mobile_hide_footer">
+        <div class="col-sm-3 col-xs-6 footer_block first">
+          <div class="footer_title">О ПЛАТФОРМЕ</div>
+          <a href="#">WIKI</a>
+          <a href="#">Авторам</a>
+          <a href="#">Инвесторам</a>
+          <a href="#">Правила использования</a>
+          <a href="#">Запустить проект</a>
+        </div>
+        <div class="col-sm-3 col-xs-6 footer_block second">
+          <div class="footer_title">КАТЕГОРИИ</div>
+          <a href="#">Экология</a>
+          <a href="#">Гаджеты</a>
+          <a href="#">Изделия и хэндмейд</a>
+          <a href="#">Игры</a>
+          <a href="#">Музыка</a>
+          <a href="#">Кино и видео</a>
+        </div>
+        <div class="col-sm-3 col-xs-6 footer_block third">
+          <div class="footer_title">&nbsp;</div>
+          <a href="#">Еда</a>
+          <a href="#">Технологии</a>
+          <a href="#">Книги</a>
+          <a href="#">Игры</a>
+          <a href="#">Косметика</a>
+          <a href="#">Мебель</a>
+        </div>
+        <div class="col-sm-3 col-xs-6 footer_block social">
+          <div class="footer_title">СОЦИАЛЬНЫЕ СЕТИ</div>
+          <div class="footer_social_icon facebook" style="background-image: url('img/facebook-icon-blue.svg');"></div>
+          <div class="footer_social_icon twitter" style="background-image: url('img/twitter-icon-blue.svg');"></div>
+          <div class="footer_social_icon instagram" style="background-image: url('img/instagram-icon-blue.svg');"></div>
+          <div class="footer_social_icon gplus" style="background-image: url('img/gplus-icon-blue.svg');"></div>
+        </div>
+      </div>
+
+      <div class="row footer_copyright_block">
+        <div class="col-md-9 col-sm-8 footer_copyright">© 2016 QIWI Crowdfunding. Все права защищены.</div>
+        <div class="col-md-3 col-sm-4 footer_created_in">
+          Созданно в <a href="#">AIR PRODUCTION</a>
+          <div class="footer_social_mobile">
+            <div class="footer_social_icon facebook" style="background-image: url('img/facebook-icon-blue.svg');"></div>
+            <div class="footer_social_icon twitter" style="background-image: url('img/twitter-icon-blue.svg');"></div>
+            <div class="footer_social_icon instagram" style="background-image: url('img/instagram-icon-blue.svg');"></div>
+            <div class="footer_social_icon gplus" style="background-image: url('img/gplus-icon-blue.svg');"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- END footer -->
+
+
+
+
+<script src="js/jquery.smooth-scroll.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/lightslider.min.js" type="text/javascript"></script>
+<script src="js/smoothscroll.js" type="text/javascript"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.tagsinput.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script src="http://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"></script>
+<script src="js/script.js" type="text/javascript"></script>
+<script>
+  // Charts
+var ctx = "projectLineChart";
+var projectLineChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+          labels: ["1 марта", "2 марта", "3 марта", "4 марта", "5 марта", "6 марта", "7 марта", "8 марта", "9 марта", "10 марта", "11 марта", "12 марта", "13 марта", "14 марта", "15 марта"],
+          datasets: [
+              {
+                  label: "Покупки",
+                  fill: true,
+                  lineTension: 0,
+                  borderWidth: 1,
+                  backgroundColor: "rgba(255, 238, 214, 0.5)",
+                  borderColor: "#ffa000",
+                  borderCapStyle: 'butt',
+                  borderDash: [],
+                  borderDashOffset: 0.0,
+                  borderJoinStyle: 'miter',
+                  pointBorderColor: "#fff",
+                  pointBackgroundColor: "#0023a0",
+                  pointBorderWidth: 3,
+                  pointHoverRadius: 7,
+                  pointHoverBackgroundColor: "#0023a0",
+                  pointHoverBorderColor: "#0023a0",
+                  pointHoverBorderWidth: 5,
+                  pointRadius: 6,
+                  pointHitRadius: 7,
+                  data: [0, 10000, 30000, 12000, 10000, 30000, 20000, 65000, 50000, 60000, 45000, 65000, 60000, 80000, 90000],
+                  spanGaps: false,
+              }
+          ]
+    }
+});
+</script>
+</body>
+</html>

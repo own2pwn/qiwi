@@ -20,7 +20,7 @@
  
 
 </head>
-<body>
+<body class="white_bg">
 
 
 
@@ -175,6 +175,280 @@
     </ul>
        
   </div>
+  <!-- Investor filters -->
+  <div class="search_filters_group investor-filter">
+    <label class="custom-checkbox">
+      <input type="checkbox" id="check_all_investors" />
+      <div class="checkbox-indicator"></div>
+    </label>
+    <!-- first search filter -->
+    <div class="group_item" id="sort_by">
+      <div class="title">С выбранными</div>
+      <div class="menu">
+        <div class="filter_name">Изменить статус</div>
+        <div class="menu_list">
+          <div class="filter item">Новый</div>
+          <div class="filter item">Не могу связаться</div>
+          <div class="filter item">Отправлено</div>
+        </div>
+      </div>
+    </div>
+    <!-- second search filter -->
+    <div class="group_item" id="category">
+      <div class="title">сортировать по</div>
+      <div class="menu">
+        <div class="filter_name">Сумме инвестиций</div>
+        <div class="menu_list">
+          <div class="filter item">Музыка</div>
+          <div class="filter item">Гаджеты</div>
+          <div class="filter item">Изделия</div>
+          <div class="filter item">Эколгогия</div>
+          <div class="filter item">Игры</div>
+          <div class="filter item">Кино</div>
+          <div class="filter item">Еда</div>
+          <div class="filter item">Дизайн</div>
+          <div class="filter item">Обучение</div>
+          <div class="filter item">Все</div>
+        </div>
+      </div>
+    </div>
+    <div class="filter-link">количество</div>
+    <div class="filter-link">цена</div>
+    <div class="filter-icons">
+        <a href="#" class="filter-icon"><img src="img/file-icon.svg" alt=""></a>
+        <a href="#" class="filter-icon"><img src="img/print-icon.svg" alt=""></a>
+    </div>
+  </div>
+  <!-- End -->
+
+  <!-- Investors table -->
+<div class="investors_table_wrapper">
+  <table class="investors_table">
+    <tr>
+      <td class="table_checkbox">
+          <label class="custom-checkbox">
+            <input type="checkbox"/>
+            <div class="checkbox-indicator"></div>
+          </label>
+      </td>
+      <td class="investor_avatar">
+        <img src="img/avatar-copy-27.png" alt="">
+        <span class="inv_date">27.09.2016</span>
+        <span class="inv_number">7634</span>
+      </td>
+      <td class="investor_meta">
+        <span class="inv_name">Мария Клим,</span>
+        <span class="inv_info">Москва, Россия</span>
+        <span class="inv_email">maria@gmail.com</span>
+        <span class="inv_status">НОВЫЙ</span>
+      </td>
+      <td class="investor_message">
+        Благодарень (ваше имя в буклете) приглашение  на концерт и закулисье + «Сезон овец» на CD  с автографами, приглашение на концерт с музы-кантами группы "Калинов мост"
+      </td>
+      <td class="investor_quantity">
+        <span>3</span>
+      </td>
+      <td class="investor_price">
+        29 300 <span>Р</span>
+      </td>
+      <td class="investor_edit">
+        <div class="news-edit">
+          <span class="edit-dots">
+            <svg xmlns="http://www.w3.org/2000/svg" width="4" height="22">
+              <g fill="#FFF" fill-rule="evenodd" transform="rotate(-90 11 11)">
+                <ellipse cx="2" cy="2" rx="2" ry="2"/>
+                <path d="M11 4c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z"/>
+                <ellipse cx="20" cy="2" rx="2" ry="2"/>
+              </g>
+            </svg>
+            <span class="close-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                <g fill="#FFF" fill-rule="evenodd">
+                  <path d="M1.697.58L8.57 7.455H6.875L13.747.58l1.697 1.698L8.57 9.15l-.848.85-.848-.85L0 2.28"/>
+                  <path d="M1.697 16L8.57 9.126H6.875L13.747 16l1.697-1.697L8.57 7.43l-.848-.85-.848.85L0 14.302"/>
+                </g>
+              </svg>
+            </span>
+          </span>
+          <ul>
+            <li><a href="#">Отправлено</a></li>
+            <li><a href="#">Не могу связаться</a></li>
+            <li><a href="#investor_message" class="investor_message_btn" data-effect="mfp-move-from-top">Написать сообщение</a></li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="table_checkbox">
+          <label class="custom-checkbox">
+            <input type="checkbox"/>
+            <div class="checkbox-indicator"></div>
+          </label>
+      </td>
+      <td class="investor_avatar">
+        <img src="img/avatar-copy-26.png" alt="">
+        <span class="inv_date">27.09.2016</span>
+        <span class="inv_number">8302</span>
+      </td>
+      <td class="investor_meta">
+        <span class="inv_name">Александр Рева,</span>
+        <span class="inv_info">Крым, Россия</span>
+        <span class="inv_email">alex@mail.ru</span>
+        <span class="inv_status">НОВЫЙ</span>
+      </td>
+      <td class="investor_message">
+        Благодарень (ваше имя в буклете CD) + «Сезон овец» на CD с автографами, приглашение  на концерт и закулисье с музыкантами группы "Калинов мост"
+      </td>
+      <td class="investor_quantity">
+        <span>8</span>
+      </td>
+      <td class="investor_price">
+        84 800 <span>Р</span>
+      </td>
+      <td class="investor_edit">
+        <div class="news-edit">
+          <span class="edit-dots">
+            <svg xmlns="http://www.w3.org/2000/svg" width="4" height="22">
+              <g fill="#FFF" fill-rule="evenodd" transform="rotate(-90 11 11)">
+                <ellipse cx="2" cy="2" rx="2" ry="2"/>
+                <path d="M11 4c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z"/>
+                <ellipse cx="20" cy="2" rx="2" ry="2"/>
+              </g>
+            </svg>
+            <span class="close-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                <g fill="#FFF" fill-rule="evenodd">
+                  <path d="M1.697.58L8.57 7.455H6.875L13.747.58l1.697 1.698L8.57 9.15l-.848.85-.848-.85L0 2.28"/>
+                  <path d="M1.697 16L8.57 9.126H6.875L13.747 16l1.697-1.697L8.57 7.43l-.848-.85-.848.85L0 14.302"/>
+                </g>
+              </svg>
+            </span>
+          </span>
+          <ul>
+            <li><a href="#">Отправлено</a></li>
+            <li><a href="#">Не могу связаться</a></li>
+            <li><a href="#">Написать сообщение</a></li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td class="table_checkbox">
+          <label class="custom-checkbox">
+            <input type="checkbox"/>
+            <div class="checkbox-indicator"></div>
+          </label>
+      </td>
+      <td class="investor_avatar">
+        <img src="img/avatar-copy-26.png" alt="">
+        <span class="inv_date">27.09.2016</span>
+        <span class="inv_number">7634</span>
+      </td>
+      <td class="investor_meta">
+        <span class="inv_name">Федор Зотов,</span>
+        <span class="inv_info">Брянск, Россия</span>
+        <span class="inv_email">zotov@yandex.ru</span>
+        <span class="inv_status">НОВЫЙ</span>
+      </td>
+      <td class="investor_message">
+        Благодарень (ваше имя в буклете CD) + «Сезон овец» на CD с автографами, приглашение  на концерт и закулисье с музыкантами группы "Калинов мост"
+      </td>
+      <td class="investor_quantity">
+        <span>8</span>
+      </td>
+      <td class="investor_price">
+        84 800 <span>Р</span>
+      </td>
+      <td class="investor_edit">
+        <div class="news-edit">
+          <span class="edit-dots">
+            <svg xmlns="http://www.w3.org/2000/svg" width="4" height="22">
+              <g fill="#FFF" fill-rule="evenodd" transform="rotate(-90 11 11)">
+                <ellipse cx="2" cy="2" rx="2" ry="2"/>
+                <path d="M11 4c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z"/>
+                <ellipse cx="20" cy="2" rx="2" ry="2"/>
+              </g>
+            </svg>
+            <span class="close-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                <g fill="#FFF" fill-rule="evenodd">
+                  <path d="M1.697.58L8.57 7.455H6.875L13.747.58l1.697 1.698L8.57 9.15l-.848.85-.848-.85L0 2.28"/>
+                  <path d="M1.697 16L8.57 9.126H6.875L13.747 16l1.697-1.697L8.57 7.43l-.848-.85-.848.85L0 14.302"/>
+                </g>
+              </svg>
+            </span>
+          </span>
+          <ul>
+            <li><a href="#">Отправлено</a></li>
+            <li><a href="#">Не могу связаться</a></li>
+            <li><a href="#">Написать сообщение</a></li>
+          </ul>
+        </div>
+      </td>
+    </tr>        
+  </table>
+</div>
+<!-- End -->
+
+<!-- Investor Vertical Filter -->
+<div class="search_filters_group investor-filter-vertical">
+  <form action="" id="investor_search" class="small_search">
+    <input type="text" placeholder="Найти..." class="form-control">
+    <button type="submit" class="btn"><img src="img/search_icon.svg" alt=""></button>
+  </form>
+  <!-- first search filter -->
+  <div class="group_item" id="city">
+    <div class="menu">
+      <div class="filter_name">Все города</div>
+      <div class="menu_list">
+        <div class="filter item">Новый</div>
+        <div class="filter item">Не могу связаться</div>
+        <div class="filter item">Отправлено</div>
+      </div>
+    </div>
+  </div>
+  <!-- first search filter -->
+  <div class="group_item" id="rewards">
+    <div class="menu">
+      <div class="filter_name">Все вознаграждения</div>
+      <div class="menu_list">
+        <div class="filter item">Новый</div>
+        <div class="filter item">Не могу связаться</div>
+        <div class="filter item">Отправлено</div>
+      </div>
+    </div>
+  </div>
+  <!-- first search filter -->
+  <div class="group_item" id="time">
+    <div class="menu">
+      <div class="filter_name">За все время</div>
+      <div class="menu_list">
+        <div class="filter item">Новый</div>
+        <div class="filter item">Не могу связаться</div>
+        <div class="filter item">Отправлено</div>
+      </div>
+    </div>
+  </div>
+  <!-- first search filter -->
+  <div class="group_item" id="status">
+    <div class="menu">
+      <div class="filter_name">Любой статус</div>
+      <div class="menu_list">
+        <div class="filter item">Новый</div>
+        <div class="filter item">Не могу связаться</div>
+        <div class="filter item">Отправлено</div>
+      </div>
+    </div>
+  </div> 
+  <label class="custom-checkbox">
+    <input type="checkbox" id="buyers_group" />
+    <div class="checkbox-indicator"></div>
+    <label for="buyers_group">сгруппировать по покупателям</label>
+  </label>
+  <div class="clearfix"></div>
+</div>
+<!-- End -->
+<a href="#" class="button_type_6 more-investors">...ЕЩЕ</a>
 
     <!-- START footer -->
   <div class="footer">
@@ -239,11 +513,34 @@
 
   </div>
   <!-- END footer -->
+
+<!-- Investor Message Popup -->
+<div id="investor_message" class="white-popup mfp-with-anim mfp-hide">
+  <h4 class="popup-title">Новое сообщение</h4>
+  <form action="" id="investor_message_form">
+      <div class="form-group">
+          <input name="tags" id="tags" value="" class="form-control" />
+      </div>
+      <div class="form-group">
+          <h5>Первые в своем роде умные часы</h5>
+          <textarea id="investor_text" name="investor_text" class="form-control" required="" placeholder="Сообщение"></textarea>
+      </div>
+      <div class="btn-wrap pull-right">
+        <span class="btn bordered cancel-btn">Отмена</span>
+        <button type="submit" class=" btn filled">Отправить</button>
+      </div>
+      <div class="clearfix"></div>
+  </form>     
+</div> 
+
 <script src="js/jquery.smooth-scroll.min.js"></script>
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/lightslider.min.js" type="text/javascript"></script>
 <script src="js/smoothscroll.js" type="text/javascript"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.tagsinput.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script src="http://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"></script>
 <script src="js/script.js" type="text/javascript"></script>
 </body>
 </html>
