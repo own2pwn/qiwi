@@ -19,6 +19,14 @@ jQuery(document).ready(function($) {
     $(this).toggleClass('edit-opened');
   });
 
+
+$('#reccomendation').lightSlider({
+  adaptiveHeight:true,
+  item:1,
+  slideMargin:0,
+  loop:true
+});
+
   var tog_src_arrow = [
     "img/user-collapse-down.svg",  // down image
     "img/user-collapse-up.svg"   // up image
@@ -941,7 +949,13 @@ jQuery(document).ready(function($) {
   setup_search_filter("#sort_by", "url(img/arrow-down-blue.svg)", "url(img/arrow-up-white.svg)"); 
   setup_search_filter("#category", "url(img/arrow-down-blue.svg)", "url(img/arrow-up-white.svg)"); 
   setup_search_filter("#cities", "url(img/arrow-down-blue.svg)", "url(img/arrow-up-white.svg)"); 
+  setup_search_filter("#cities", "url(img/arrow-down-blue.svg)", "url(img/arrow-up-white.svg)"); 
+  setup_search_filter("#city", "url(img/arrow-down-blue.svg)", "url(img/arrow-up-white.svg)"); 
+  setup_search_filter("#rewards", "url(img/arrow-down-blue.svg)", "url(img/arrow-up-white.svg)"); 
+  setup_search_filter("#time", "url(img/arrow-down-blue.svg)", "url(img/arrow-up-white.svg)"); 
+  setup_search_filter("#status", "url(img/arrow-down-blue.svg)", "url(img/arrow-up-white.svg)"); 
   setup_search_filter("#favorites_menu", "url(img/arrow-down-white.svg)", "url(img/arrow-up-white.svg)"); 
+  setup_search_filter("#month", "url(img/arrow-down-white.svg)", "url(img/arrow-up-white.svg)"); 
 
   $(document).click(function(e) {
     var class_clicked = e.target.className;
@@ -1332,10 +1346,80 @@ $('.cancel-btn').on( "click", function() {
         $(this).find(".main_part").css('color', '');
       });
 
+      $(".add_comment_btn").click( function() {
+        $(".add_comment").show();
+      });
+      $(".add_comment .close").click( function() {
+        $(".add_comment").hide();
+      });
+      $(".report-link").click( function() {
+        var self = $(this);
+        $('.service_comment').hide();
+        $('.service_comment[rel=report' + self.attr('target') +']').show();
+      });
+      $(".report_comment .close").click( function() {
+        $(this).parent().parent().hide();
+      });
+      $(".reply-link").click( function() {
+        var self = $(this);
+        $('.service_comment').hide();
+        $('.service_comment[rel=reply' + self.attr('target') +']').show();
+      });
+      $(".reply_comment .close").click( function() {
+        $(this).parent().parent().hide();
+      });      
+
+      $(".project_card_comments_container .comment.left .message .hider").click(function(event) {
+      var window_width = $(window).width();
+      if (window_width > 750) {
+        var height = $(this).next().height() + 71 + 55;
+        var height_closed = 196;
+      } else {
+        var height = $(this).next().height() + 71 + 100;
+        var height_closed = 300;
+      }
+      
+      var image_arrow = $(this).find("img");
+      if (!$(this).hasClass('active')) {
+        $(this).addClass('active');
+        $(this).parent().animate({"height": height}, 200);
+        image_arrow.attr('src', 'img/arrow-up-blue.svg');
+      } else {
+        $(this).removeClass('active');
+        $(this).parent().animate({"height": height_closed}, 200);
+        image_arrow.attr('src', 'img/arrow-down-blue.svg');
+      }
+    });
+    $(window).resize(function(event) {
+      $(".project_card_comments_container .comment.left .message .hider").removeClass('active');
+      $(".project_card_comments_container .comment.left .message .hider").parent().css('height', '');
+      $(".project_card_comments_container .comment.left .message .hider img").attr('src', 'img/arrow-down-blue.svg');
+    });
+
      }
     }
   });
 
+// Investor Message Popup
+$('.investor_message_btn').magnificPopup({
+  removalDelay: 500,
+  midClick: true,
+  callbacks: {
+    beforeOpen: function() {
+       this.st.mainClass = this.st.el.attr('data-effect');
+    }
+  }
+});
+
+// Comments
+$(".add_comment_btn").click( function() {
+  $(".add_comment").show();
+});
+$(".add_comment .close").click( function() {
+  $(".add_comment").hide();
+});
+
+$('#tags').tagsInput();
 
 // REFERENCES:
 // https://developer.mozilla.org/en-US/docs/Rich-Text_Editing_in_Mozilla
@@ -1363,7 +1447,125 @@ $('#editControls .btn').on('click', function() {
   edit($(this).data('role'));
 });
 
-
+// Check all checkboxes
+$("#check_all_investors").change(function () {
+    $(".investors_table input:checkbox").prop('checked', $(this).prop("checked"));
+});
 
 });
 
+
+
+  // Counters
+
+  (function ($) {
+    $.fn.countTo = function (options) {
+      options = options || {};
+      
+      return $(this).each(function () {
+        // set options for current element
+        var settings = $.extend({}, $.fn.countTo.defaults, {
+          from:            $(this).data('from'),
+          to:              $(this).data('to'),
+          speed:           $(this).data('speed'),
+          refreshInterval: $(this).data('refresh-interval'),
+          decimals:        $(this).data('decimals')
+        }, options);
+        
+        // how many times to update the value, and how much to increment the value on each update
+        var loops = Math.ceil(settings.speed / settings.refreshInterval),
+          increment = (settings.to - settings.from) / loops;
+        
+        // references & variables that will change with each update
+        var self = this,
+          $self = $(this),
+          loopCount = 0,
+          value = settings.from,
+          data = $self.data('countTo') || {};
+        
+        $self.data('countTo', data);
+        
+        // if an existing interval can be found, clear it first
+        if (data.interval) {
+          clearInterval(data.interval);
+        }
+        data.interval = setInterval(updateTimer, settings.refreshInterval);
+        
+        // initialize the element with the starting value
+        render(value);
+        
+        function updateTimer() {
+          value += increment;
+          loopCount++;
+          
+          render(value);
+          
+          if (typeof(settings.onUpdate) == 'function') {
+            settings.onUpdate.call(self, value);
+          }
+          
+          if (loopCount >= loops) {
+            // remove the interval
+            $self.removeData('countTo');
+            clearInterval(data.interval);
+            value = settings.to;
+            
+            if (typeof(settings.onComplete) == 'function') {
+              settings.onComplete.call(self, value);
+            }
+          }
+        }
+        
+        function render(value) {
+          var formattedValue = settings.formatter.call(self, value, settings);
+          $self.html(formattedValue);
+        }
+      });
+    };
+    
+    $.fn.countTo.defaults = {
+      from: 0,               // the number the element should start at
+      to: 0,                 // the number the element should end at
+      speed: 1000,           // how long it should take to count between the target numbers
+      refreshInterval: 1,  // how often the element should be updated
+      decimals: 0,           // the number of decimal places to show
+      formatter: formatter,  // handler for formatting the value before rendering
+      onUpdate: null,        // callback method for every time the element is updated
+      onComplete: null       // callback method for when the element finishes updating
+    };
+    
+    function formatter(value, settings) {
+      return value.toFixed(settings.decimals);
+    }
+  }(jQuery));
+
+  jQuery(function ($) {
+    // custom formatting example
+    $('#count-number').data('countToOptions', {
+    formatter: function (value, options) {
+      return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+    }
+    });
+    
+    // start all the timers
+    $('.timer').each(count);  
+    
+    function count(options) {
+    var $this = $(this);
+    options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+    $this.countTo(options);
+    }
+  });
+
+// Pie Charts
+  $(function() {
+      $('.chart').easyPieChart({
+        scaleColor: "#fff",
+        lineWidth: 20,
+        lineCap: 'circle',
+        barColor: '#ffa000',
+        trackColor: "#e6e6e6",
+        size: 280,
+        animate: 500
+      });
+  });
